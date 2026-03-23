@@ -26,3 +26,13 @@ app.post('/categories', async (req, res) => {
     res.status(500).send('Error al guardar la categoría')
   }
 })
+
+app.get('/categories', async (req, res) => {
+ try {
+  const result = await pool.query('SELECT * FROM categories')
+  res.json(result.rows)
+ } catch (err) {
+  console.error(error);
+  res.status(500).json('Error al obtener las categorías')
+ }
+})

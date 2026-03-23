@@ -30,7 +30,7 @@ class _Column1State extends State<Column1> {
                 text: TextSpan(
                   children: [
                     TextSpan(
-                      text: "EFFIC",
+                      text: "SIUMAI",
                       style: const TextStyle(
                         color: Color.fromARGB(255, 255, 1, 1),
                         fontSize: 20,
@@ -38,7 +38,7 @@ class _Column1State extends State<Column1> {
                       ),
                     ),
                     TextSpan(
-                      text: "ORDERS",
+                      text: "POS",
                       style: const TextStyle(
                         color: Color(0xFFe2e2e2),
                         fontSize: 20,
@@ -139,9 +139,19 @@ class _Column1State extends State<Column1> {
                     ),
                   ),
                 ),
+
+                Padding(
+                  padding: const EdgeInsets.all(80.0),
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    child: const Icon(Icons.table_restaurant),
+                  ),
+                ),
               ],
             ),
+
             const Spacer(),
+
             Padding(
               padding: const EdgeInsets.only(bottom: 10.0),
               child: const Text(
